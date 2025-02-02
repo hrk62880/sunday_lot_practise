@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex">
+
+        <div class="v-nav d-none d-lg-flex flex-column align-items-center aside-bar" id="aside-bar">
+            <div class="pt-3 pb-3 d-flex align-items-center justify-content-center ">
+                <img src="images/logos/pizzashop_logo.png" width="50px" height="50px" class="d-inline-block align-self-center" alt="" />
+                <span class="logo-text align-self-center">PIZZASHOP</span>
+            </div>
+            <div>
+                <ul class="d-flex flex-column gap-4 mt-2">
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ================================    Started Working From Here on the main body area    ========================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1  ">
+                            <img src="images/navbar-icons/dashboard-default.png" alt="This is img" height="20px" width="20px">
+                            <div class="">Dashboard</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-cente gap-1 selected">
+                            <img src="images/navbar-icons/users-active.png" alt="This is img" height="20px" width="20px">
+                            <div class="selected">Users</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/roles-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Role and Permission</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1 ">
+                            <img src="images/navbar-icons/menu-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Menu</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/table-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Table And Section</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/taxes-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Taxes And Fees</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/orders-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Orders</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/customers-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Customers</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="d-flex flex-column w-100 ">
+            <div class="h-nav d-flex justify-content-between align-items-center p-2 w-100  mb-2">
+                <div>
+                    <img src="images/icons/menu-icon.svg" alt="" width="30px">
+                </div>
+                <div>
+                    <img src="images/Default_pfp.svg.png" alt="" width="30" height="24" class="me-3">
+                </div>
+
+            </div>
+            <div class="user-body d-flex flex-column  ps-5 pe-5 pt-2 pb-2 shadow-sm">
+
+                <div class="d-flex justify-content-between w-100 mb-3">
+                    <div>
+                        <h1 class="text-custom-color ">Users</h1>
+                    </div>
+                    <div class="d-flex justify-content-center  align-items-center gap-1">
+                        <div class="d-flex justify-content-center align-items-center ">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="user-search-bar">
+                        </div>
+                        <div>
+                            <a href="add-new-user.html" class="text-decoration-none text-white">
+                                <button type="button" class="btn  text-white btn-color"> + Add User</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="d-flex justify-content-start gap-1">
+                                        <div>Name</div>
+                                        <img src="images/icons/arrow-up.svg" alt="">
+                                        <img src="images/icons/arrow-down.svg" alt="">
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div>Email</div>
+                                </th>
+                                <th scope="col">
+                                    <div>Phone</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="d-flex justify-content-start gap-1">
+                                        <div>Role</div>
+                                        <img src="images/icons/arrow-up.svg" alt="">
+                                        <img src="images/icons/arrow-down.svg" alt="">
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div>Status</div>
+                                </th>
+                                <th scope="col">
+                                    <div>Action</div>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                        <img src="images/Default_pfp.svg.png" alt="" class="table-row-img">
+                                        <div>Steave steave</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>steave@yopmail.com</div>
+                                </td>
+                                <td>9801234567</td>
+                                <td>Chef</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-4 ">
+                                        <a href="edit-user.html" class="text-decoration-none text-black ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                                              </svg>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-2 ">
+                                        <img src="images/Default_pfp.svg.png " alt=" " class="table-row-img ">
+                                        <div>John Wick</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>johnwick@yopmail.com</div>
+                                </td>
+                                <td>7654800133 </td>
+                                <td>Chef</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-4 ">
+                                        <a href="edit-user.html" class="text-decoration-none text-black ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                                              </svg>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-2 ">
+                                        <img src="images/Default_pfp.svg.png " alt=" " class="table-row-img ">
+                                        <div>John Doe</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>John123@yopmail.com</div>
+                                </td>
+                                <td>9088767887</td>
+                                <td>Account</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-4 ">
+                                        <a href="edit-user.html" class="text-decoration-none text-black ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                                              </svg>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-2 ">
+                                        <img src="images/Default_pfp.svg.png " alt=" " class="table-row-img ">
+                                        <div>Alex Den</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>alex@yopmail.com</div>
+                                </td>
+                                <td>9801234567</td>
+                                <td>Admin</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-4 ">
+                                        <a href="edit-user.html" class="text-decoration-none text-black ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                                              </svg>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-2 ">
+                                        <img src="images/Default_pfp.svg.png " alt=" " class="table-row-img ">
+                                        <div>Cris Den</div>
+                                    </div>
+                                </td>
+                                <td>cris@yopmail.com</td>
+                                <td>9801234599</td>
+                                <td>Chef</td>
+                                <td>Active</td>
+                                <td>
+                                    <div class="d-flex justify-content-start align-items-center gap-4 ">
+                                        <a href="edit-user.html" class="text-decoration-none text-black ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"/>
+                                              </svg>
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                    <div class="d-flex align-items-center justify-content-end gap-2">
+                        <caption>List of users
+                            <div>Item Per Page:</div>
+                            <div>
+                                <div class="form-group d-flex align-items-center justify-content-center ">
+                                    <select class="form-control dropdown-select-button" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                    <img src="images/icons/chevron-compact-down.svg" alt="" class="dropdown-arrow">
+                                    <div class="d-flex align-items-center justify-content-center"></div>
+                                </div>
+                            </div>
+                            <div>Showing 1 - 5 of 13</div>
+                            <div>
+                                <button class="p-2 bg-white  border-secondary border-opacity-10">
+                                    <img src="images/icons/chevron-left.svg" alt="" class="w-100">
+                                </button>
+                            </div>
+                            <div>
+                                <button class="p-2 bg-white border-black border-opacity-10">
+                                    <img src="images/icons/chevron-right.svg" alt="" class="w-100">
+                                </button>
+                            </div>
+
+                        </caption>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("aside-bar ").classList.toggle("open ");
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/custom.js">
+    </script>
+</body>
+
+
+</html>

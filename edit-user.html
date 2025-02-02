@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex">
+
+        <div class="v-nav d-none d-lg-flex flex-column align-items-center aside-bar" id="aside-bar">
+            <div class="pt-3 pb-3 d-flex align-items-center justify-content-center ">
+                <img src="images/logos/pizzashop_logo.png" width="50px" height="50px" class="d-inline-block align-self-center" alt="" />
+                <span class="logo-text align-self-center">PIZZASHOP</span>
+            </div>
+            <div>
+                <ul class="d-flex flex-column gap-4 mt-2">
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ================================          Completed the add-new-user page           ========================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <!-- ============================================================================================================== -->
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1  ">
+                            <img src="images/navbar-icons/dashboard-default.png" alt="This is img" height="20px" width="20px">
+                            <div class="">Dashboard</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-cente gap-1 selected">
+                            <img src="images/navbar-icons/users-active.png" alt="This is img" height="20px" width="20px">
+                            <div class="selected">Users</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/roles-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Role and Permission</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1 ">
+                            <img src="images/navbar-icons/menu-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Menu</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/table-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Table And Section</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/taxes-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Taxes And Fees</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/orders-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Orders</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-start align-items-center gap-1">
+                            <img src="images/navbar-icons/customers-default.png" alt="This is img" height="20px" width="20px">
+                            <div>Customers</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="d-flex flex-column w-100">
+            <div class="h-nav d-flex justify-content-between align-items-center p-2 w-100">
+                <div>
+                    <img src="images/icons/menu-icon.svg" alt="" width="30px">
+                </div>
+                <div>
+                    <img src="images/Default_pfp.svg.png" alt="" width="30" height="24" class="me-3">
+                </div>
+
+            </div>
+            <div class="dashboard-body d-flex flex-column  ps-5 pe-5 pt-2 pb-2 w-100 h-100  ">
+
+                <div class="d-flex flex-column flex-sm-row  align-items-start align-items-sm-center justify-content-between w-100">
+                    <div>
+                        <h1 class="text-custom-color">Edit User</h1>
+                    </div>
+                    <div class="d-flex  justify-content-end  align-items-center align-self-end  align-self-sm-center gap-1">
+                        <!-- <div class="d-none d-md-flex justify-content-center align-items-center ">
+                            <div class="d-flex justify-content-center align-items-center ">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="user-search-bar">
+                            </div>
+                        </div>
+                        <div class="d-flex d-md-none justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center p-3 ">
+                                <img src="images/icons/search.svg" alt="" width="20px" height="20px">
+                            </div>
+                        </div> -->
+                        <div>
+                            <a href="/user.html" class="text-decoration-none">
+                                <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-between ">
+                                                <img src="images/icons/chevron-left.svg" alt="">
+                                                <div>Back</div>
+                             </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 shadow-sm bg-white rounded">
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">User Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Select Role</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Role</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name=" ">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 pb-3" id="upload-area">
+
+                            <label for="file-upload" class="d-flex align-items-center justify-content-center flex-column" id="upload-label">
+                                        <img src="images/icons/upload.png" alt="" width="30px" height="30px">
+                                        <div>Browse files</div>
+                                    </label>
+                            <input id="file-upload" type="file" />
+                        </div>
+
+                        <div class="row mt-3 ">
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Select Country</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Country</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Select State</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">State</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Select City</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">City</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-md-4 ">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">Zipcode</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="" placeholder="name@example.com">
+                                    <label for="floatingInput">Phone</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-row align-items-center justify-content-start gap-1 mt-1">
+                        <button type="button" class="btn btn-color  text-white">Update User</button>
+                        <button type="button" class="btn btn-outline-primary">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("aside-bar ").classList.toggle("open ");
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/custom.js">
+    </script>
+</body>
+
+
+</html>
+
+</html>
