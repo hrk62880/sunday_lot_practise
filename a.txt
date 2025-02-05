@@ -1,2 +1,1 @@
-hello there,
-i have worked on the both add user and updata user page, start working from the delete user page using model of bootstrap
+ok i will not delete it from now
